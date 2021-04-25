@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="#" />
+        <title>JS DOM</title>
+        <style>
+            .class-1 {
+                background-color: sienna;
+                color: white;
+                padding: 1rem 2rem;
+            }
+            .class-2 {
+                background-color: tomato;
+                color: slateblue;
+            }
+            .class-3 {
+                color: khaki;
+            }
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="center">Javascript in Browser - DOM</h1>
+        </header>
+        <main>
+            <section class="intro-to-dom">
+                <h2>Introduction to DOM</h2>
+                <p id="paragraph1"></p>
+                <p id="paragraph2"></p>
+            </section>
+
+            <section class="finding-html-elements">
+                <h2>Finding HTML elements</h2>
+                <p id="paragraph3"></p>
+                <p class="para-1"></p>
+                <p class="para-2"></p>
+            </section>
+
+            <section class="creating-content-with-js">
+                <h2>Heading</h2>
+                <p></p>
+            </section>
+
+            <section class="traversing-dom">
+                <h2>Traversing DOM</h2>
+                <ul>
+                    <li>Movie 1</li>
+                    <li>Movie 2</li>
+                    <li>Movie 3</li>
+                    <li>Movie 4</li>
+                    <li>Movie 5</li>
+                </ul>
+            </section>
+
+            <section class="attributes">
+                <h2>Attributes</h2>
+                <ul>
+                    <li data-year="2009">Movie 1</li>
+                    <li data-year="2003">Movie 2</li>
+                    <li data-year="2004">Movie 3</li>
+                    <li data-year="2001">Movie 4</li>
+                </ul>
+            </section>
+
+            <section class="styling-js class-1">
+                <h2>Styling with JS</h2>
+                <ul>
+                    <li>Movie 1</li>
+                    <li>Movie 2</li>
+                    <li>Movie 3</li>
+                    <li>Movie 4</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
+
+            <section class="document-fragments">
+                <h2>Document Fragments</h2>
+                <ul class="doc-frag-list"></ul>
+            </section>
+
+            <section class="nodes-vs-elements">
+                <h2>Nodes Vs Elements</h2>
+                <!-- Comment -->
+                <p>Some paragraph</p>
+            </section>
+
+            <section class="nodelist-vs-htmlcollection">
+                <h2>NodeList Vs HTMLCollection</h2>
+                <p>Another paragraph</p>
+            </section>
+
+            <section class="adjacent-dom">
+                <h2>Adjacent DOM Manipulation</h2>
+                <p class="p-1">This is a paragraph 1</p>
+                <hr />
+                <p class="p-2">This is a paragraph 2</p>
+                <hr />
+                <p class="p-3">This is a paragraph 3</p>
+                <hr />
+            </section>
+        </main>
+        <footer id="foot">
+            <p class="center">&copy; Mladen 2021</p>
+        </footer>
+        <script src="1_DOM.js"></script>
+    </body>
+</html>

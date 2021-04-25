@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="css/2_events.css" />
+        <title>JS Events</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="center">Javascript in Browser - Events</h1>
+        </header>
+
+        <section class="events-intro">
+            <h2>Introduction to Events</h2>
+            <p id="intro-para" class="bg-1">My paragraph</p>
+            <button id="intro-btn">My Button</button>
+            <a id="intro-link" href="https://www.google.com">Link</a>
+            <input id="intro-input-1" type="text" />
+            <input id="intro-input-2" type="text" />
+            <input id="intro-input-3" type="text" />
+        </section>
+
+        <section class="event-bubbling-and-propagation">
+            <h2>Event Bubbling and Propagation</h2>
+            <article id="ebp-a">
+                <div id="ebp-d">
+                    <p id="ebp-p">
+                        <span id="ebp-s"></span>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="target-vs-current-target">
+            <h2>Event target Vs currentTarget</h2>
+            <article class="bg-1" id="tvct-a">
+                This is inside the article element
+                <div class="bg-2" id="tvct-d">
+                    This is inside the div element
+                    <span class="bg-3" id="tvct-s">This is inside the span</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="handle-event-method">
+            <h2>Built in handleEvent method</h2>
+            <button id="hem-btn">Click Me</button>
+        </section>
+
+        <section class="keyboard-events">
+            <h2>Keyboard Events</h2>
+            <input type="text" id="ke-input" />
+        </section>
+
+        <section class="mouse-events">
+            <h2>Mouse Enter&Leave vs Over&Out vs Move</h2>
+            <div class="mouse-enter">
+                <h3>Enter Triggs: <span>0</span></h3>
+            </div>
+            <div class="mouse-over">
+                <h3>Over Triggs: <span>0</span></h3>
+            </div>
+            <div class="mouse-move">
+                <h3>Move Triggs: <span>0</span></h3>
+            </div>
+        </section>
+
+        <section class="custom-events">
+            <h2>Custom Events</h2>
+            <article></article>
+        </section>
+
+        <section class="touch-events">
+            <h2>Touch Events on Mobile Devices</h2>
+            <p class="bg-1">
+                Some paragraph that can be touched only with touch capable device, clicking it with mouse will not accomplish anything
+            </p>
+        </section>
+
+        <section class="choosing-event-targets">
+            <h2>Choosing Event Targets</h2>
+            <h4>Nothing Selected</h4>
+            <article>
+                <ul class="list-view-ch">
+                    <li class="list-item-ch" data-id="1" data-name="Sam">1: <span>Sam</span></li>
+                    <li class="list-item-ch" data-id="3" data-name="Jane">3: <span>Jane</span></li>
+                    <li class="list-item-ch" data-id="8" data-name="Bob">8: <span>Bob</span></li>
+                    <li class="list-item-ch" data-id="15" data-name="Mary">15: <span>Mary</span></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="removing-event-listeners">
+            <h2>Removing Event Listeners</h2>
+            <button class="start-rm">Start Adding list elements</button>
+            <ul class="list-view-rm">
+                <li class="list-item-rm">First Post</li>
+                <li class="list-item-rm">Second Post</li>
+            </ul>
+        </section>
+
+        <section class="building-right-click-menus">
+            <h2>Handling Right Click Menus</h2>
+            <div class="right-click-box">
+                Right click on this text. Right click on this text. Right click on this text. Right click on this text.Right click on this
+                text. Right click on this text. Right click on this text. Right click on this text.
+            </div>
+            <ul class="right-click-menu off">
+                <li class="right-click-item" id="red">Red</li>
+                <li class="right-click-item" id="green">Green</li>
+                <li class="right-click-item" id="blue">Blue</li>
+            </ul>
+        </section>
+
+        <section class="error-event">
+            <h2>Handling Errors</h2>
+            <p>
+                The window object has an error event that lets us handle any error that happens on the page. Much better than wrapping whole
+                page in a try catch block.
+            </p>
+        </section>
+
+        <section class="client-page-screen-offset">
+            <h2>client vs page vs screen vs offset</h2>
+            <h4 class="cpsoX">Click inside article</h4>
+            <h4 class="cpsoY"></h4>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sunt veritatis tempore aut eligendi natus ea aliquam,
+                inventore nobis. Iusto molestiae ex impedit asperiores at nihil! Ex ab deleniti sint possimus, id ipsum nisi beatae non.
+                Quis officia illum ea, magni accusantium dolorum officiis ullam, reiciendis est amet numquam consectetur quam beatae? Magni
+                sint iusto ratione nisi magnam eos vero, dolore cupiditate expedita cum tempore aut nesciunt quisquam facilis possimus
+                maxime consequuntur voluptas mollitia tempora voluptates repellendus perferendis voluptatem dicta.
+            </article>
+        </section>
+
+        <section class="form-events">
+            <h2>Form Events</h2>
+            <form action="#" name="formSample">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" enterkeyhint="next" placeholder="" value="" maxlength="50" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="name">Email</label>
+                    <input type="email" id="email" inputmode="email" enterkeyhint="next" placeholder="" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="name">Password</label>
+                    <input type="password" id="password" enterkeyhint="send" placeholder="" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="name">Phone</label>
+                    <input type="tel" id="phone" inputmode="tel" placeholder="" autocomplete="off" />
+                </div>
+                <div>
+                    <label for="lang">Language</label>
+                    <select id="lang">
+                        <option value="en" lang="en">English</option>
+                        <option value="sv" lang="sv">Svensk</option>
+                        <option value="ru" lang="ru">Rusian</option>
+                        <option value="de" lang="de">Deutch</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- <input type="submit" id="form-submit" enterkeyhint="send" /> -->
+                    <button id="form-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <footer id="foot">
+            <p class="center">&copy; Mladen 2021</p>
+        </footer>
+        <script src="2_Events.js"></script>
+    </body>
+</html>

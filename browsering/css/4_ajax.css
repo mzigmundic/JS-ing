@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: seagreen;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+#users {
+    max-width: 700px;
+    list-style: none;
+    padding: 0;
+}
+
+#users li {
+    background-color: #efefef;
+    border: 1px solid #aaa;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+#users .name {
+    color: #000;
+    font-size: 15px;
+    padding: 8px;
+    margin: 0;
+}
+
+#users .info {
+    background-color: #ddd;
+    color: #555;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+}

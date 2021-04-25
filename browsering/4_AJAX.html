@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="#" />
+        <title>JS AJAX</title>
+        <link rel="stylesheet" href="css/4_ajax.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="center">Javascript in Browser - AJAX</h1>
+        </header>
+        <main>
+            <section class="fetch-method">
+                <h2>Fetch Method</h2>
+                <article></article>
+            </section>
+
+            <section>
+                <h2>Fetch with Request and Headers Object</h2>
+                <article>...</article>
+            </section>
+
+            <section>
+                <h2>Sending AJAX Form Data to the Server with fetch</h2>
+                <article>...</article>
+            </section>
+
+            <section class="real-example">
+                <h2>Real World example</h2>
+                <ul id="users"></ul>
+            </section>
+
+            <section class="fetch-upload">
+                <h2>Upload Files with fetch</h2>
+                <form action="#">
+                    <div>
+                        <input type="hidden" id="user_id" value="75" />
+                        <input type="file" id="avatar_img" accept="image/x-png" />
+                    </div>
+                    <div>
+                        <button id="upload-submit">Upload Avatar</button>
+                    </div>
+                </form>
+                <article></article>
+            </section>
+
+            <section class="fetching-html">
+                <h2>Fetching HTML</h2>
+                <button>Fetch HTML</button>
+                <article></article>
+            </section>
+
+            <section class="form-data">
+                <h2>FormData Object</h2>
+                <pre></pre>
+            </section>
+
+            <section class="using-form-data">
+                <h2>Using FormData to Parse Forms</h2>
+                <form action="#" id="form-data-form">
+                    <fieldset>
+                        <legend>Registration</legend>
+                        <div class="form-box">
+                            <label for="first">First Name</label>
+                            <input type="text" id="first" name="first" autocomplete="off" />
+                        </div>
+                        <div class="form-box">
+                            <label for="first">Last Name</label>
+                            <input type="text" id="last" name="last" autocomplete="off" />
+                        </div>
+                        <div class="form-box">
+                            <label for="first">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="off" />
+                        </div>
+                        <div class="form-box">
+                            <label for="first">Password</label>
+                            <input type="password" id="pass" name="pass" autocomplete="off" />
+                        </div>
+                        <div class="form-box">
+                            <label for="first">I love spam</label>
+                            <input type="checkbox" id="spam" name="spam" checked />
+                        </div>
+                        <div class="form-box">
+                            <button id="submit-form">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="async-await">
+                <h2>Async Await</h2>
+            </section>
+        </main>
+        <footer id="foot">
+            <p class="center">&copy; Mladen 2021</p>
+        </footer>
+        <script src="4_AJAX.js"></script>
+    </body>
+</html>
